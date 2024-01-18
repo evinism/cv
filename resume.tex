@@ -1,6 +1,7 @@
 \documentclass[10pt]{letter}
-\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
+\usepackage[a4paper,margin=0.75in,footskip=0.25in]{geometry}
 \usepackage{color}
+\usepackage{multirow}
 \pagenumbering{gobble}
 \setlength\parindent{0pt}
 \begin{document}
@@ -19,7 +20,7 @@ evin.dev $\cdot$ (323) 327-7888 $\cdot$ evinism@gmail.com
 \begin{itemize}
   \item Proposed, designed, and implemented Discord's LLM abstraction layer, enabling traceability, observability, and vendor agnosticism to all LLM usage.
   % \item Enabled smooth pathways to transitioning from external OpenAI models to self-hosted models.
-  \item Deployed, scaled, and cuto cost of serving of GenAI features to full production traffic.
+  \item Deployed, scaled, and cut cost of serving of LLMs to full production traffic.
   %\item Enabled sub-hourly batch jobs to bridge the gap between realtime and batch.
   %\item Supported ML Engineer across several orgs, enabling them to do the best work they can.
   \item Partnered directly with client teams to solve many hair-on-fire cross-disciplinary problems in ML.
@@ -44,9 +45,9 @@ evin.dev $\cdot$ (323) 327-7888 $\cdot$ evinism@gmail.com
 \hfill 
 \textbf{Dec 2018 - Jul 2020}
 \begin{itemize}
-  \item Bootstrapped process for safe conversion of 40k LOC JS codebase to TypeScript, utilizing custom-built tooling. System in use for over a year with contributions from nearly a dozen developers across multiple teams. Enabled conversion with zero production issues.
-  \item Planned and executed the cleanup and removal of ~100k LOC codebase of highly volatile, business-critical server side Python with no production issues.
-  \item Rebuilt YouTube mWeb's settings page from the ground up. Released globally to ~200M users.
+  \item Bootstrapped process for safe conversion of 40k LOC JS codebase to TypeScript, using custom tooling I authored. System in use for over a year with contributions from nearly a dozen developers across multiple teams. Enabled conversion with zero production issues.
+  \item Planned and executed the cleanup and removal of ~100k LOC codebase of highly volatile, business-critical server side Python with minimal production issues.
+  \item Rebuilt YouTube mWeb's settings page from the ground up.
 \end{itemize}
 
 \hspace*{2px}
@@ -55,7 +56,7 @@ evin.dev $\cdot$ (323) 327-7888 $\cdot$ evinism@gmail.com
 \hfill
 \textbf{Jun 2018 - Dec 2018}
 \begin{itemize}
-  \item Researched, implemented, and integrated experimental machine learning models for Procore’s first customer-facing ML features, including construction content-aware image search.
+  \item Researched, implemented, and integrated experimental machine learning models for Procore’s first customer-facing ML features, including content-aware image search for the construction domain.
 \end{itemize}
 
 \hspace*{2px}
@@ -73,24 +74,31 @@ evin.dev $\cdot$ (323) 327-7888 $\cdot$ evinism@gmail.com
 \hrule
 \textbf{Open Source}
 
+\begin{tabular*}{\linewidth}{ll@{\extracolsep{\fill}}r}
+\textbf{MistQL} & \textit{www.mistql.com} & \textbf{Oct 2021} \\
+\multicolumn{3}{l}{\hspace*{2px}Query language for JSON-like structures. Featured in Thoughtworks’ Tech Radar Vol 26} \\
+\textbf{Lambda Explorer} & \textit{lambdaexplorer.com} & \textbf{Jun 2017} \\
+\multicolumn{3}{l}{\hspace*{2px}Tutorial / REPL for the Lambda Calculus. Focus on contextual pedagogy. React + Typescript } \\
+\end{tabular*}
+
 \vspace{4px}
 \hrule
 \textbf{Publications}
 
-\begin{tabular}{llr}
+\begin{tabular*}{\linewidth}{ll@{\extracolsep{\fill}}r}
 \textit{Patent} & Computer System and Method for Predicting Risk Level of Punch Items & \textbf{Mar 2020} \\
-\textit{Blog} & evinsellin.medium.com, articles primarily focusing on technical topics and satire.
-\end{tabular}
+% \textit{Blog} & \multicolumn{2}{l}{evinsellin.medium.com Articles primarily focusing on technical topics and satire.}
+\end{tabular*}
 
 \vspace{4px}
 \hrule
 \textbf{Technical Proficiencies}
 
-\begin{tabular}{lll}
+\begin{tabular*}{\linewidth}{ll@{\extracolsep{\fill}}l}
   \textit{Languages} & Python, Typescript, JS, Rust, Terraform, Ruby, HTML/CSS, and others \\
   \textit{ML} & Pytorch, Tensorflow, sklearn, various serving frameworks, OpenAI, and others \\
   \textit{Tooling} &  Kubernetes, GCP, AWS, React, Rails, Django, Postgres, various NoSQLs, and others \\
-\end{tabular}
+\end{tabular*}
 
 \vspace{4px}
 \hrule
